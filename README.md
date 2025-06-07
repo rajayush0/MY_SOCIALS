@@ -22,7 +22,7 @@ USAGE:
 
 LIVE DEMO:
 Visit the live version at:
-https://yourusername.github.io/socials-hub
+https://raj-socials.netlify.app/
 
 HOW TO RUN LOCALLY:
 1. Clone the repo:
