@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const volumeBtn = document.getElementById("volume-btn");
   const volumeSlider = document.getElementById("volume-slider");
 
-  // Try autoplay on load, fallback to user click
+  
   audio.play().catch(() => {
     console.log("Autoplay blocked. Waiting for user click.");
     document.body.addEventListener("click", () => {
@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }, { once: true });
   });
 
-  // Entry button hides the splash screen & plays audio
+  
   enterBtn.addEventListener("click", () => {
     audio.play().then(() => {
       entryScreen.style.display = "none";
@@ -30,13 +30,13 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Toggle mute/unmute button
+  
   volumeBtn.addEventListener("click", () => {
     audio.muted = !audio.muted;
     volumeBtn.textContent = audio.muted ? "🔇" : "🔊";
   });
 
-  // Volume slider changes audio volume and icon
+  
   volumeSlider.addEventListener("input", () => {
     audio.volume = volumeSlider.value;
     if (audio.volume == 0) {
