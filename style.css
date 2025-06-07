@@ -89,6 +89,90 @@ body {
     color: #aaa;
   }
   
+@media (max-width: 600px) {
+  #profile {
+    width: 90px;
+    margin-top: 70px;
+  }
+
+  #name {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  #sub {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  .status {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .socials {
+    bottom: 40px;
+    gap: 10px;
+  }
+
+  .socials a {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .views {
+    font-size: 12px;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  #audio-btn {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+#intro-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+#intro-screen h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 2px 2px 4px #00ff00;
+}
+
+#enter-site {
+  background-color: #00ff00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#enter-site:hover {
+  transform: scale(1.1);
+}
+
+  
   
   
   

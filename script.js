@@ -7,20 +7,22 @@ fetch(countURL)
   });
   window.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("bb-audio");
-    const btn = document.getElementById("audio-btn");
 
-    // Try autoplay (in case browser blocks)
-    audio.play().catch(() => {
-      btn.textContent = "▶️"; // Show play icon if autoplay fails
-    });
+    // Try to play automatically
+    audio.play().catch((err) => {
+      console.log("Autoplay blocked. Waiting for user click.");
 
-    btn.addEventListener("click", () => {
-      if (audio.paused) {
+      // Fallback: user interaction
+      document.body.addEventListener("click", () => {
         audio.play();
-        btn.textContent = "⏸️";
-      } else {
-        audio.pause();
-        btn.textContent = "▶️";
-      }
+      }, { once: true });
     });
+  });
+  document.getElementById("enter-site").addEventListener("click", () => {
+    const audio = document.getElementById("bb-audio");
+    const intro = document.getElementById("intro-screen");
+
+    audio.play(); // Start audio
+    intro.style.opacity = "0"; // Fade out
+    setTimeout(() => intro.style.display = "none", 1000); // Remove after fade
   });
