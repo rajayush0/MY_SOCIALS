@@ -1,4 +1,4 @@
-const countURL = 'https://api.countapi.xyz/hit/ayush-social-site/visits';
+const countURL = 'https://api.countapi.xyz/hit/raj-socials.netlify.app/visits';
 
 fetch(countURL)
   .then(res => res.json())
