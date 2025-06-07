@@ -18,11 +18,4 @@ fetch(countURL)
       }, { once: true });
     });
   });
-  document.getElementById("enter-site").addEventListener("click", () => {
-    const audio = document.getElementById("bb-audio");
-    const intro = document.getElementById("intro-screen");
-
-    audio.play(); // Start audio
-    intro.style.opacity = "0"; // Fade out
-    setTimeout(() => intro.style.display = "none", 1000); // Remove after fade
-  });
+  

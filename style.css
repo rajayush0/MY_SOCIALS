@@ -1,178 +1,146 @@
 body {
-    margin: 0;
-    font-family: "Oxanium", sans-serif;
-    text-align: center;
-    overflow: hidden;
-    font-family: "Oxanium", sans-serif;
-    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTB5dm81cGh1MnhkaDUzeXl3cmt6amx1cDl0N3VmYXhoaDA4YTE1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYeFT1QcxgzEXss/giphy.gif');
-    background-size: cover;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .audiowide-regular {
-    font-family: "Audiowide", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.oxanium-uniquifier {
-    font-family: "Oxanium", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
-  
-  #profile{
-    margin-top: 100px;
-    width: 120px;
-    border-radius: 50%;
-  }
-  .audiowide-regular {
-  font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-#name{
-    margin-top: 30px;
-    margin-bottom: 1px;
-    font-family: "Audiowide", sans-serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 0px rgb(255, 102, 0)
-}
-#sub{
-    margin-top: 10px;
-    color: rgb(255, 174, 0);
-    font-size: medium;
-    text-shadow: 0px 0px 5px black;
-}
-.status {
-    margin-top: 20px;
-    background: rgba(235, 64, 6, 0.1);
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(6px); 
-  }
-  a:link {
-    color: rgb(255, 102, 0);
-    background-color: transparent;
-    text-decoration: none;
-    text-shadow: 0px 0px px rgb(0, 0, 0);
-  }
-  .socials {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 15px;
-  }
-  .socials a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
-    transition: transform 0.2s ease;
-  }
-  .socials a:hover {
-    transform: scale(1.3);
-    color: rgb(255, 102, 0);
-  }
-  .views {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-size: 14px;
-    color: #aaa;
-  }
-  
-@media (max-width: 600px) {
-  #profile {
-    width: 90px;
-    margin-top: 70px;
-  }
-
-  #name {
-    font-size: 22px;
-    margin-top: 20px;
-  }
-
-  #sub {
-    font-size: 14px;
-    margin-top: 6px;
-  }
-
-  .status {
-    padding: 8px 16px;
-    font-size: 13px;
-  }
-
-  .socials {
-    bottom: 40px;
-    gap: 10px;
-  }
-
-  .socials a {
-    font-size: 20px;
-    margin: 0 5px;
-  }
-
-  .views {
-    font-size: 12px;
-    bottom: 15px;
-    left: 15px;
-  }
-
-  #audio-btn {
-    bottom: 15px;
-    right: 15px;
-    width: 35px;
-    height: 35px;
-    font-size: 16px;
-  }
-}
-#intro-screen {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(6px);
+  margin: 0;
+  font-family: "Oxanium", sans-serif;
+  text-align: center;
+  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTB5dm81cGh1MnhkaDUzeXl3cmt6amx1cDl0N3VmYXhoaDA4YTE1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYeFT1QcxgzEXss/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  transition: opacity 1s ease;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-#intro-screen h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+
+.audiowide-regular {
   font-family: "Audiowide", sans-serif;
-  text-shadow: 2px 2px 4px #00ff00;
+  font-weight: 400;
+  font-style: normal;
+}
+#profile {
+  margin-top: 80px;
+  width: 140px;
+  max-width: 40vw;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4); /* orange border with 40% opacity */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+#name {
+  margin: 20px 0 5px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 2rem;
+  text-shadow: 3px 3px 0px rgb(255, 102, 0);
 }
 
-#enter-site {
-  background-color: #00ff00;
-  color: black;
-  border: none;
+
+#sub {
+  margin-top: 10px;
+  color: rgb(255, 174, 0);
+  font-size: 1rem;
+  text-shadow: 0px 0px 5px black;
+}
+
+
+.status {
+  margin-top: 20px;
+  background: rgba(235, 64, 6, 0.1);
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 1.2rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: 0.95rem;
 }
 
-#enter-site:hover {
-  transform: scale(1.1);
+
+a:link {
+  color: rgb(255, 102, 0);
+  text-decoration: none;
 }
 
-  
-  
-  
-  
+a:hover {
+  text-decoration: underline;
+}
+
+
+.socials {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  color: white;
+  font-size: 28px;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.3);
+  color: rgb(255, 102, 0);
+}
+
+.views {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  #profile {
+    width: 100px;
+    margin-top: 60px;
+  }
+
+  #name {
+    font-size: 1.5rem;
+  }
+
+  #sub {
+    font-size: 0.9rem;
+  }
+
+  .status {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .socials {
+    gap: 14px;
+    margin-bottom: 50px;
+  }
+
+  .socials a {
+    font-size: 22px;
+  }
+
+  .views {
+    font-size: 12px;
+    left: 10px;
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #profile {
+    width: 120px;
+  }
+
+  #name {
+    font-size: 1.75rem;
+  }
+
+  .socials a {
+    font-size: 26px;
+  }
+}
