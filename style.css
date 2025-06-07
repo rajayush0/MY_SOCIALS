@@ -96,100 +96,7 @@ a:hover {
   color: #aaa;
 }
 
-@media (max-width: 600px) {
-  #profile {
-    width: 100px;
-    margin-top: 60px;
-  }
 
-  #name {
-    font-size: 1.5rem;
-  }
-
-  #sub {
-    font-size: 0.9rem;
-  }
-
-  .status {
-    padding: 8px 14px;
-    font-size: 0.85rem;
-  }
-
-  .socials {
-    gap: 14px;
-    margin-bottom: 50px;
-  }
-
-  .socials a {
-    font-size: 22px;
-  }
-
-  .views {
-    font-size: 12px;
-    left: 10px;
-    bottom: 15px;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  #profile {
-    width: 120px;
-  }
-
-  #name {
-    font-size: 1.75rem;
-  }
-
-  .socials a {
-    font-size: 26px;
-  }
-}
-@media (max-width: 600px) {
-  body {
-    padding: 20px;
-    overflow: auto;
-  }
-
-  #profile {
-    width: 130px;
-    margin-top: 50px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-  }
-
-  #name {
-    font-size: 1.8rem;
-    margin-top: 20px;
-  }
-
-  #sub {
-    font-size: 1.1rem;
-    margin-top: 10px;
-  }
-
-  .status {
-    padding: 10px 18px;
-    font-size: 1rem;
-    margin-top: 20px;
-  }
-
-  .socials {
-    bottom: 30px;
-    gap: 12px;
-    flex-wrap: wrap;
-    padding: 0 10px;
-  }
-
-  .socials a {
-    font-size: 24px;
-    margin: 0 6px;
-  }
-
-  .views {
-    font-size: 13px;
-    bottom: 10px;
-    left: 10px;
-  }
-}
 #bg-video {
   position: fixed;
   top: 0;
@@ -199,6 +106,7 @@ a:hover {
   object-fit: cover;
   z-index: -1;
   opacity: 100; 
+  user-select: none;
 }
 #entry-screen {
   position: fixed;
@@ -271,3 +179,36 @@ a:hover {
   border: none;
 }
 
+@media (max-width: 600px) {
+  #profile {
+    width: 140px; /* same or slightly bigger */
+    margin-top: 60px;
+  }
+
+  #name {
+    font-size: 2.5rem; /* increase from ~1.8rem */
+    margin-top: 25px;
+  }
+
+  #sub {
+    font-size: 1.3rem; /* increase from ~1.1rem */
+    margin-top: 12px;
+  }
+
+  .status {
+    padding: 12px 22px;
+    font-size: 1.2rem; /* bigger font */
+    margin-top: 25px;
+  }
+
+  .socials a {
+    font-size: 28px; /* bigger social icons */
+    margin: 0 8px;
+  }
+
+  .views {
+    font-size: 15px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
