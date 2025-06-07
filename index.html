@@ -1,6 +1,6 @@
 <html>
     <head>
-        <script  src="script.js"></script>
+        
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +12,27 @@
 
     </head>
     <body>
+      <div id="entry-screen">
+        <h2>Welcome to My Socials</h2>
+        <button id="enter-btn">Enter</button>
+      </div>
+      <video autoplay muted loop id="bg-video">
+        <source src="NARCOS.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+              
       <audio id="bb-audio" autoplay loop>
-        <source src="/breakingbad.mp3" type="audio/mpeg">
+        <source src="/narcos.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-      
-        <img src="IMG_6801.JPG" id="profile">
+      <button id="volume-btn" title="Mute/Unmute">🔊</button>
+      <!-- Volume Slider -->
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" title="Volume" />
+  
+      <img src="IMG_6801.JPG" id="profile">
         <h1 id="name"> AYUSH RAJ</h1>
         <h3 id="sub">Check Out My Socials!</h3>
-        <div class="status">❌ User Not found<br><a href="http://discord.com/users/431405487179825154" target="" >Hop in now</a>
+        <div class="status">❌ User Not found<br><a href="https://github.com/rajayush0" target="" >Explore on GitHub</a>
         </div>
         <div class="socials">
             <a href="https://www.linkedin.com/in/raj-ayush-b38764219/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -34,6 +46,8 @@
           <div class="views">
             <i class="fas fa-eye"></i> <span id="viewCount">13</span>
           </div>
+          <script  src="script.js"></script>
           
     </body>
+    
 </html>
