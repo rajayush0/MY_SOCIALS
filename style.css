@@ -2,9 +2,9 @@ body {
   margin: 0;
   font-family: "Oxanium", sans-serif;
   text-align: center;
-  
-  
+  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTB5dm81cGh1MnhkaDUzeXl3cmt6amx1cDl0N3VmYXhoaDA4YTE1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYeFT1QcxgzEXss/giphy.gif');
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   color: white;
   display: flex;
@@ -26,7 +26,7 @@ body {
   width: 140px;
   max-width: 40vw;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.4); /* orange border with 40% opacity */
+  border: 3px solid rgba(255, 255, 255, 0.4); 
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 #name {
@@ -94,19 +94,6 @@ a:hover {
   left: 20px;
   font-size: 14px;
   color: #aaa;
-}
-
-
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 100; 
-  user-select: none;
 }
 #entry-screen {
   position: fixed;
@@ -239,16 +226,7 @@ html, body {
     font-size: 14px;
   }
 }
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  pointer-events: none; 
-}
+
 input, textarea, select {
   font-size: 16px;
 }
