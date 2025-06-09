@@ -21,7 +21,7 @@ body {
   font-family: "Audiowide", sans-serif;
 }
 
-#entry-screen {
+ #entry-screen {
   position: fixed;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@ body {
 #enter-btn {
   padding: 10px 20px;
   font-size: 16px;
-  border: none;
+    border: none;
   border-radius: 20px;
   background: rgb(255, 149, 0);
   color: black;
@@ -76,14 +76,14 @@ body {
 #volume-slider {
   position: fixed;
   top: 50px;
-  left: 90px;
+   left: 90px;
   width: 30px;
   height: 4px;
-  appearance: none;
+   appearance: none;
   background: #fff;
   border-radius: 4px;
-  z-index: 10000;
-  cursor: pointer;
+   z-index: 10000;
+   cursor: pointer;
 }
 
 #volume-slider::-webkit-slider-thumb {
@@ -107,10 +107,10 @@ body {
 
 #profile {
   margin-top: 80px;
-  width: 140px;
+     width: 140px;
   max-width: 40vw;
   border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.4);
+   border: 3px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
