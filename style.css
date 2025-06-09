@@ -1,103 +1,30 @@
 body {
   margin: 0;
+  padding: 20px;
   font-family: "Oxanium", sans-serif;
-  text-align: center;
   background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTB5dm81cGh1MnhkaDUzeXl3cmt6amx1cDl0N3VmYXhoaDA4YTE1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYeFT1QcxgzEXss/giphy.gif');
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
-
 
 .audiowide-regular {
   font-family: "Audiowide", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-#profile {
-  margin-top: 80px;
-  width: 140px;
-  max-width: 40vw;
-  border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.4); 
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-#name {
-  margin: 20px 0 5px;
-  font-family: "Audiowide", sans-serif;
-  font-size: 2rem;
-  text-shadow: 3px 3px 0px rgb(255, 102, 0);
 }
 
-
-#sub {
-  margin-top: 10px;
-  color: rgb(255, 174, 0);
-  font-size: 1rem;
-  text-shadow: 0px 0px 5px black;
-}
-
-
-.status {
-  margin-top: 20px;
-  background: rgba(235, 64, 6, 0.1);
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 0px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  font-size: 0.95rem;
-}
-
-
-a:link {
-  color: rgb(255, 102, 0);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-.socials {
-  margin-top: 40px;
-  margin-bottom: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.socials a {
-  color: white;
-  font-size: 28px;
-  transition: transform 0.2s ease;
-}
-
-.socials a:hover {
-  transform: scale(1.3);
-  color: rgb(255, 102, 0);
-}
-
-.views {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  font-size: 14px;
-  color: #aaa;
-}
 #entry-screen {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: black;
@@ -111,7 +38,6 @@ a:hover {
 
 #entry-screen h2 {
   margin-bottom: 20px;
-  font-family: "Oxanium", sans-serif;
 }
 
 #enter-btn {
@@ -119,10 +45,11 @@ a:hover {
   font-size: 16px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
-  background: #ff6a00;
+  background: rgb(255, 149, 0);
   color: black;
+  cursor: pointer;
 }
+
 #volume-btn {
   position: fixed;
   top: 30px;
@@ -138,108 +65,185 @@ a:hover {
 }
 
 #volume-btn:hover {
-  position: fixed;
-  top: 30px;
-  left: 30px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 #volume-slider {
   position: fixed;
   top: 50px;
   left: 90px;
   width: 30px;
-  cursor: pointer;
-  z-index: 10000;
-  appearance: none;
   height: 4px;
+  appearance: none;
   background: #fff;
   border-radius: 4px;
+  z-index: 10000;
+  cursor: pointer;
 }
 
 #volume-slider::-webkit-slider-thumb {
   appearance: none;
   width: 12px;
   height: 12px;
-  background: orange;
+  background: rgb(255, 149, 0);
   border-radius: 50%;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#profile {
+  margin-top: 80px;
+  width: 140px;
+  max-width: 40vw;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+#name {
+  margin: 20px 0 5px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 2rem;
+  text-shadow: 3px 3px 0px rgb(255, 102, 0);
+}
+
+#sub {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: rgb(255, 149, 0);
+  text-shadow: 0px 0px 5px black;
+}
+
+#status {
+  color: #fff;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  background: rgba(235, 64, 6, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-shadow: 1px 1px 0px #000000;
+  transition: transform 0.2s ease;
+}
+
+#status:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 149, 0);
+}
+
+#portfolio {
+  color: #fff;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  background: rgba(235, 64, 6, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-shadow: 1px 1px 0px #000000;
+  transition: transform 0.2s ease;
+}
+
+#portfolio:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 149, 0);
+}
+
+.socials {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  font-size: 28px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.3);
+  color: rgb(255, 149, 0);
+}
+
+.views {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+a:link {
+  color: rgb(252, 250, 249);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
   #profile {
-    width: 140px; 
     margin-top: 60px;
   }
 
-  #name {
-    font-size: 2.5rem; 
-    margin-top: 25px;
-  }
-
-  #sub {
-    font-size: 1.3rem; 
-    margin-top: 12px;
-  }
-
-  .status {
-    padding: 12px 22px;
-    font-size: 1.2rem; 
-    margin-top: 25px;
-  }
-
-  .socials a {
-    font-size: 28px; 
-    margin: 0 8px;
-  }
-
-  .views {
-    font-size: 15px;
-    bottom: 15px;
-    left: 15px;
-  }
-}
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-}
-@media (max-width: 420px) {
   #name {
     font-size: 2.2rem;
   }
 
   #sub {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
-  .status {
-    font-size: 1.1rem;
+  #status {
+    font-size: 1rem;
+  }
+
+  #portfolio {
+    font-size: 1rem;
   }
 
   .socials a {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .views {
     font-size: 14px;
+    bottom: 15px;
+    left: 15px;
   }
 }
-
-input, textarea, select {
-  font-size: 16px;
-}
-
-#buttons{
+#button-container {
   display: flex;
-  flex-direction: row;
-  
-
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
-.status{
-  margin-right: 50px;
-  margin-right: 50px;
+#portfolio {
+  white-space: nowrap;
 }
-
-
+#status {
+  white-space: nowrap;
+}

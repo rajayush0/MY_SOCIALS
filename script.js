@@ -48,5 +48,14 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
       volumeBtn.textContent = "🔊";
     }
+    
   });
+ 
+  
 });
+function status() {
+  window.open("https://github.com/rajayush0", "_blank");
+}
+function portfolio() {
+  window.open("https://drive.google.com/file/d/1b8tPzVFSGaIp_kFcbGoNE1TYVheBlBbG/view?usp=sharing", "_blank");
+}
