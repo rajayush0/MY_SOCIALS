@@ -53,6 +53,8 @@ body {
 } 
 #enter-btn:hover{
   transform: scale(1.1);
+  color: #fff;
+  cursor: url(images/heart-cursor.svg) 10 10, pointer;
 }
 
 #volume-btn {
@@ -141,16 +143,14 @@ body {
   padding: 10px 20px;
   background: rgba(235, 64, 6, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   font-size: 0.95rem;
   cursor: pointer;
   text-shadow: 1px 1px 0px #000000;
   transition: transform 0.2s ease;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
-               0 0 40px rgba(255, 102, 0, 0.3);
+  
 }
-
 
 #status:hover {
   transform: scale(1.1);
@@ -171,8 +171,6 @@ body {
   cursor: pointer;
   text-shadow: 1px 1px 0px #000000;
   transition: transform 0.2s ease;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
-               0 0 40px rgba(255, 102, 0, 0.3);
 }
 
 #portfolio:hover {
