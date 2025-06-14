@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 20px;
   font-family: "Oxanium", sans-serif;
-  background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTB5dm81cGh1MnhkaDUzeXl3cmt6amx1cDl0N3VmYXhoaDA4YTE1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYeFT1QcxgzEXss/giphy.gif');
+  
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -261,4 +261,24 @@ a:hover {
 #status {
   white-space: nowrap;
   border-radius: 10px;
+}
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none;
+}
+#bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* Adjust darkness */
+  z-index: -1;
+  pointer-events: none;
 }
