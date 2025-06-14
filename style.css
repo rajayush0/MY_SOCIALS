@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 20px;
   font-family: "Oxanium", sans-serif;
-  
+  background-image: url('./bb.gif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -262,7 +262,7 @@ a:hover {
   white-space: nowrap;
   border-radius: 10px;
 }
-#bg-video {
+/* #bg-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -271,7 +271,7 @@ a:hover {
   object-fit: cover;
   z-index: -2;
   pointer-events: none;
-}
+} */
 #bg-overlay {
   position: fixed;
   top: 0;
